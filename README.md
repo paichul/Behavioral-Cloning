@@ -12,7 +12,7 @@ Please click on the image or the link to watch the demo video on YouTube.
 
 https://youtu.be/r1Xtko5LPMw
 
-The detailed explanation of the deep learning pipeline can be found in this notebook: 
+The detailed explanation of the deep learning pipeline can be found in this notebook: https://github.com/paichul/Behavioral-Cloning/blob/master/demo.ipynb
 
 # Usage Instructions
 
