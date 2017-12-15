@@ -19,16 +19,16 @@ The detailed explanation of the deep learning pipeline can be found in this note
 
 # Software Usage Prerequisite
 Make sure you have the right versions of the software installed: 
-    - python==3.5.2
-    - numpy
-    - matplotlib
-    - opencv3
-    - scikit-learn
-    - scikit-image
-    - scipy
-    - pandas
-    - https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp35-cp35m-linux_x86_64.whl
-    - keras==2.0.7
+- python==3.5.2
+- numpy
+- matplotlib
+- opencv3
+- scikit-learn
+- scikit-image
+- scipy
+- pandas
+- https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp35-cp35m-linux_x86_64.whl
+- keras==2.0.7
 
 # Usage Instructions
 
