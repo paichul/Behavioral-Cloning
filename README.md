@@ -20,8 +20,13 @@ The detailed explanation of the deep learning pipeline source code can be found 
 - I actively monitored the training accuracy and validation accuracy for different models I tried. The accuracy is based on Mean Sqaured Error between the ground truth steering angle and the predicted steering angle. I found that using fewer than 5 convolutional layers would cause the model to overfit as the validation accuracy is substantially lower than the training accuray. By doing an error analysis, I found that that this model cannot deal with large turns (that is, to generate big steering angle command). Having more than 5 convolutional layers does not improve the performance for this simulation data. Thus, 5 convolutional layers works best in this demo.
 - To avoid overfitting, I applied dropout with probablity of 0.5 right after th last convolutional layer. Adding dropout elsewhere did not improve the performance. 
 
-# Visualization for Interpretable Deep Learning
-I modified Grad-CAM (Gradient Class Acitvation Map) to allow it to work with continouous output. Grad-CAM was designed 
+# Interpretable Deep Learning Insights
+- I extended Grad-CAM (Gradient Class Acitvation Map) to allow it to work with continouous control output (steering angle). Grad-CAM was designed to allow people to see which part of the input image the convolutional neural network puts more weight on based on the current discrete class label prediction. This visualization can be done for each layer to see how each layer pays attention to different parts of the input image. However, for autonomous driving, the steering angle command is continuous, not discrete. Thus, I modified the original algorithm to make it work with continuous control. Below is an example of the visualization image done for the first convoluational layer. Red color means higher attention weight and blue color means lower attention weight.
+
+
+
+
+- I found that lower-level convolutional layers shows more precise details on which parts of images those layers pay attention to; whereas, the higher-level convolutional layers tend to generate less precise attention details but more high-level semantics such as putting weight on the left or on the right part of the image.
 
 # Key Computer Vision Insights
 -
