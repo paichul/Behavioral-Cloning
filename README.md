@@ -12,10 +12,22 @@ Please click on the image or the link to watch the demo video on YouTube.
 
 Demo Video YoutTube link: https://youtu.be/r1Xtko5LPMw
 
-The detailed explanation of the deep learning pipeline can be found in this notebook: https://github.com/paichul/Behavioral-Cloning/blob/master/demo.ipynb
+The detailed explanation of the deep learning pipeline source code can be found in this notebook: https://github.com/paichul/Behavioral-Cloning/blob/master/demo.ipynb
 
-# Key Deep Learning Concepts
+# Key Deep Learning Insights
+- Larger filter sizes for the first few convolutional layers give better performance because larger filter size alllows it to capture more spatial information.
+- It's also important to decrease the filter size as the feature map resolution decreases after several convolutional layers becuase decreasing the feature map size forces the model to learn more relevant high-level image features for the steering prediction.
+- I actively monitored the training accuracy and validation accuracy for different models I tried. The accuracy is based on Mean Sqaured Error between the ground truth steering angle and the predicted steering angle. I found that using fewer than 5 convolutional layers would cause the model to overfit as the validation accuracy is substantially lower than the training accuray. By doing an error analysis, I found that that this model cannot deal with large turns (that is, to generate big steering angle command). Having more than 5 convolutional layers does not improve the performance for this simulation data. Thus, 5 convolutional layers works best in this demo.
+- To avoid overfitting, I applied dropout with probablity of 0.5 right after th last convolutional layer. Adding dropout elsewhere did not improve the performance. 
 
+# Visualization for Interpretable Deep Learning
+I modified Grad-CAM (Gradient Class Acitvation Map) to allow it to work with continouous output. Grad-CAM was designed 
+
+# Key Computer Vision Insights
+-
+
+# Key Robotics Control Insights
+- 
 
 # Software Usage Prerequisite
 Make sure you have the right versions of the software installed: 
@@ -30,6 +42,9 @@ Make sure you have the right versions of the software installed:
 - https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp35-cp35m-linux_x86_64.whl
 - keras==2.0.7
 
+# Simulation Data Generation
+Please contact me at paichul@cs.stanford.edu for the simulator binary.
+
 # Usage Instructions
 
 model.py uses Tensorflow and Keras to preprocess the images/control data (including data augmentation) and then generates a 
@@ -39,7 +54,7 @@ To train the model, run:
 
 "python model.py"
 
-drive.py uses the model to generate steering angle prediction and uses a PD Controller to generate the speed command. Those commands are then sent to the simulator to drive the vehicle autonomously in the simulator. Please contact me at paichul@cs.stanford.edu for the simulator binary.
+drive.py uses the model to generate steering angle prediction and uses a PD Controller to generate the speed command. Those commands are then sent to the simulator to drive the vehicle autonomously in the simulator. 
 
 To run the trained model, type:
 
