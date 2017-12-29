@@ -8,13 +8,13 @@ simulator. The vehicle can stay at the center of the lane for very challenging r
 [![Click to watch the full video](https://github.com/paichul/Behavioral-Cloning/blob/master/bc.gif)](https://www.youtube.com/watch?v=pNWlzoTTb_A)
 
 # Features
-- Convolutional Neural Network for Vehicle Steering Angle Control
+- End-to-End Convolutional Neural Network for Vehicle Steering Angle Control
 - Residual Connection
 - Batch Normalization
 - Intermediate Layer Attention Map Visualization
 - Unsupervised Road Segmentation
 - Unsupervised Lane Marking Detection
-- PI Controller for the Vehicle Speed Control
+- PI Controller for Vehicle Speed Control
 
 For the details please see the paper here.
 
