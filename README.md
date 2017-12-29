@@ -18,10 +18,11 @@ simulator. The vehicle can stay at the center of the lane for very challenging r
 
 For the details please see the paper here.
 
-# Neural Network Artchitecture
+# Intermediate Layer Attention Map Visualization
+Unsupervised Road Segmentation for Convolutional Layer 1
 
 
-# Layer-by-Layer Attention Map Visualization
+Unsupervised Lane Marking Detection for Convolutional Layer 2,3
 
 
 # Software Dependencies
