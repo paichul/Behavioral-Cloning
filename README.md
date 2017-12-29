@@ -18,6 +18,12 @@ simulator. The vehicle can stay at the center of the lane for very challenging r
 
 For the details please see the paper here.
 
+# Neural Network Artchitecture
+
+
+# Layer-by-Layer Attention Map Visualization
+
+
 # Software Dependencies
 Make sure you have the right versions of the software installed: 
 - python==3.5.2
