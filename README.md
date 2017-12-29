@@ -51,18 +51,22 @@ Make sure you have the right versions of the software installed:
 Please send an email to paichul@cs.stanford.edu for the simulator binary.
 
 # Training and Testing Instructions
-
-model.py uses Tensorflow and Keras to preprocess the images/control data (including data augmentation) and then generates a 
-model called "model.h5".
+- model.py: model training pipeline from data preprocessing, data augmentation, model specification to optimization. The training outputs a model called "model.h5" that can be used by the simulator to run the vehicle autonomously.
+- drive.py: model testing pipeline including a PI Controller to generate the speed command and it lods the model.h5 to generate the steering angle prediction. It also sends the speed and steering angle command to the simulator to maneuver the vehicle autonomously in the simulator.
+- visualize.py: visualization pipeline for interpretability.
+- tools.py: data preprocessing utility tools
 
 To train the model, run:
 
 "python model.py"
 
-drive.py uses the model to generate steering angle prediction and uses a PD Controller to generate the speed command. Those commands are then sent to the simulator to drive the vehicle autonomously in the simulator. 
 
-To run the trained model, type:
+To run the trained model, run:
 
-"drive.py model.h5"
+"python drive.py model.h5"
 
 Remember to start the simulator before running the model.
+
+To visualize different layer of the model, run:
+
+"python visualize.py [layer_name]"
