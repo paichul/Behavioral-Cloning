@@ -61,7 +61,7 @@ To train the model, run:
 "python model.py"
 
 
-To run the trained model, run:
+To run the trained model, type:
 
 "python drive.py model.h5"
 
