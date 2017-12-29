@@ -1,5 +1,7 @@
 # Interpretable Behavioral Cloning in Simulation (Autonomous Driving Open Source)
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="8E5DzRo"><a href="//imgur.com/8E5DzRo">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
 Behavorial Cloning allows a machine to imitate how a human drives a vehicle. The system 
 learns an end-to-end deep learning model which takes each video frame as input and 
 generates a control output. Below is the demo video of a vehicle running autonomously in the 
