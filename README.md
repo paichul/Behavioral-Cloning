@@ -19,7 +19,7 @@ simulator. The vehicle can stay at the center of the lane for very challenging r
 For the details please see the paper here.
 
 # Intermediate Layer Attention Map Visualization
-According to the Attention Map Visualization, we see that 
+Unsupervised Road Segmentation: According to the Attention Map Visualization, we see that 
 Convolutional Layer 1 has learned to perform Road Segmentation even without 
 any semantic scene segmentation label information, but only the steering control supervision.
 The green region shows irrelevant image pixels for the steering angle prediction and the red region
