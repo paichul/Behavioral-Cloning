@@ -48,7 +48,7 @@ Make sure you have the right versions of the software installed:
 - keras==2.0.7
 
 # Simulation Data Generation
-Please contact me at paichul@cs.stanford.edu for the simulator binary.
+Please send an email to paichul@cs.stanford.edu for the simulator binary.
 
 # Training and Testing Instructions
 
