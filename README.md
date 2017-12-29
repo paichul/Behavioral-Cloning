@@ -24,30 +24,29 @@ Please see the paper here for the detailed explanation of each feature.
 Unsupervised Road Segmentation: According to the Attention Map Visualization, we see that 
 Convolutional Layer 1 has learned to perform Road Segmentation even without 
 any semantic scene segmentation label information, but only the steering angle control supervision.
-The green region shows irrelevant image pixels for the steering angle prediction and the red region (the road)
-shows the relevant image pixels that the model pay attention to for the steering angle prediction.
+The green region shows irrelevant image pixels (the model pays negative attention) for the steering angle prediction and the red region (the road) shows the relevant image pixels that the model pays (positive) attention to for the steering angle prediction.
 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20road%20segmentation.png)
 
 Unsupervised Lane Marking Detection: According to the Attention Map Visualization, we see that 
 Convolutional Layer 2 and Convoluational Layer 3 have learned to perform Lane Marking Detection even without 
 any lane marking label information, but only the steering angle control supervision.
-The green/blue regions show less relevant image pixels for the steering angle prediction and the red region (the lane marking) shows the more relevant image pixels that the model pay attention to for the steering angle prediction.
+The green/blue regions show less relevant image pixels (the model pays less positive attention) for the steering angle prediction and the red region (the lane marking) shows the more relevant image pixels that the model pays (more positive) attention to for the steering angle prediction.
 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20lane%20marking%20detection.png)
 
 
 # Software Dependencies
 Make sure you have the right versions of the software installed: 
-- python==3.5.2
+- python 3.5.2
 - numpy
 - matplotlib
 - opencv3
 - scikit-learn
 - scipy
 - pandas
-- https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp35-cp35m-linux_x86_64.whl
-- keras==2.0.7
+- tensorflow gpu-1.3.0 https://storage.googleapis.com/tensorflow/linux/gpu/tensorflow_gpu-1.3.0-cp35-cp35m-linux_x86_64.whl
+- keras 2.0.7
 
 # Simulation Data Generation
 Please see the paper here for the detailed explanation of the simulation data generation procedure.
