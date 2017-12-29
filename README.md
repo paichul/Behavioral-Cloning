@@ -21,12 +21,13 @@ For the details please see the paper here.
 # Intermediate Layer Attention Map Visualization
 Unsupervised Road Segmentation: According to the Attention Map Visualization, we see that 
 Convolutional Layer 1 has learned to perform Road Segmentation even without 
-any semantic scene segmentation label information, but only the steering control supervision.
+any semantic scene segmentation label information, but only the steering angle control supervision.
 The green region shows irrelevant image pixels for the steering angle prediction and the red region
 shows the relevant image pixels that the model pay attention to for the steering angle prediction.
 [![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20road%20segmentation.png)]
 
 Unsupervised Lane Marking Detection for Convolutional Layer 2,3
+[![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20road%20segmentation.png)]
 
 
 # Software Dependencies
