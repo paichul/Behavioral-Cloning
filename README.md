@@ -16,7 +16,7 @@ simulator. The vehicle can stay at the center of the lane for very challenging r
 - Unsupervised Lane Marking Detection
 - PI Controller for Vehicle Speed Control
 
-For the details please see the paper here.
+Please see the paper here for the detailed explanation of each feature.
 
 # Intermediate Layer Attention Map Visualization
 Unsupervised Road Segmentation: According to the Attention Map Visualization, we see that 
@@ -48,6 +48,7 @@ Make sure you have the right versions of the software installed:
 - keras==2.0.7
 
 # Simulation Data Generation
+Please see the paper here for the detailed explanation of the simulation data generation procedure.
 Please send an email to paichul@cs.stanford.edu for the simulator binary.
 
 # Training and Testing Instructions
