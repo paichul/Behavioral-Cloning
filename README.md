@@ -20,7 +20,7 @@ For the details please see the paper here.
 
 # Intermediate Layer Attention Map Visualization
 Unsupervised Road Segmentation for Convolutional Layer 1
-
+[![Unsupervised Road Segmentation for Convolutional Layer 1](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20road%20segmentation.png)]
 
 Unsupervised Lane Marking Detection for Convolutional Layer 2,3
 
