@@ -27,7 +27,7 @@ shows the relevant image pixels that the model pay attention to for the steering
 [![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20road%20segmentation.png)]
 
 Unsupervised Lane Marking Detection for Convolutional Layer 2,3
-[![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20road%20segmentation.png)]
+[![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20lane%20marking%20detection.png)]
 
 
 # Software Dependencies
