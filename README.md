@@ -5,7 +5,7 @@ learns an end-to-end deep learning model which takes each video frame as input a
 generates a control output. Below is the demo video of a vehicle running autonomously in the 
 simulator. The vehicle can stay at the center of the lane for very challenging roads most of the time.
 
-[![Click to watch the entire demo video](https://imgur.com/a/6bTyL)](https://www.youtube.com/watch?v=pNWlzoTTb_A)
+[![Click to watch the entire demo video](https://imgur.com/8E5DzRo)](https://www.youtube.com/watch?v=pNWlzoTTb_A)
 
 Demo Video YoutTube link: https://youtu.be/r1Xtko5LPMw
 
