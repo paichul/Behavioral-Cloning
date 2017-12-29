@@ -7,6 +7,8 @@ simulator. The vehicle can stay at the center of the lane for very challenging r
 
 [![Click to watch the full video](https://github.com/paichul/Behavioral-Cloning/blob/master/bc.gif)](https://www.youtube.com/watch?v=pNWlzoTTb_A)
 
+See the 6 minute full video here: https://www.youtube.com/watch?v=pNWlzoTTb_A
+
 # Features
 - End-to-End Convolutional Neural Network for Vehicle Steering Angle Control
 - Residual Connection
@@ -71,3 +73,15 @@ Remember to start the simulator before running the model.
 To visualize different layer of the model, run:
 
 "python visualize.py [layer_name]"
+
+# Publication
+Please see the paper "Interpretable Behavioral Cloning in Simulation" for this open source project.
+
+# Simulation to Reality Transfer
+This project is a small component of the larger Simulation-To-Reality Transfer for Autonomous Driving/Robots framework. The rest of the framework will be open sourced soon. Potential features include:
+- Generative Models (such as Adverserial Generative Networks)
+- Domain Adoptation
+- Transfer Learning
+- Multi-Task Learning
+- Meta Learning
+- Adverserial Example
