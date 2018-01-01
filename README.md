@@ -26,14 +26,14 @@ Convolutional Layer 1 has learned to perform Road Segmentation even without
 any semantic scene segmentation label information, but only the steering angle control supervision.
 The green region shows irrelevant image pixels (the model pays negative attention) for the steering angle prediction and the red region (the road) shows the relevant image pixels that the model pays (positive) attention to for the steering angle prediction.
 
-![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20road%20segmentation.png)
+![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20road%20segmentation.png)
 
 Unsupervised Lane Marking Detection: According to the Attention Map Visualization, we see that 
 Convolutional Layer 2 and Convoluational Layer 3 have learned to perform Lane Marking Detection even without 
 any lane marking label information, but only the steering angle control supervision.
 The green/blue regions show less relevant image pixels (the model pays less positive attention) for the steering angle prediction and the red region (the lane marking) shows the more relevant image pixels that the model pays (more positive) attention to for the steering angle prediction.
 
-![](https://github.com/paichul/Behavioral-Cloning/blob/master/unsupervised%20lane%20marking%20detection.png)
+![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20lane%20marking%20detection.png)
 
 
 # Software Dependencies
