@@ -28,7 +28,7 @@ The green region shows image pixels the model pays relatively less attention to 
 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20road%20segmentation.png)
 
-<H2>Unsupervised Lane Marking Detection<H2>
+<H2>Unsupervised Lane Marking Detection</H2>
 According to the Activation (Attention) Map Visualization for the second and third Convolutional layers, we see that 
 Convolutional Layers 2 and 3 have learned to perform Lane Marking Detection even without 
 any lane marking label information, but only the steering angle control supervision.
