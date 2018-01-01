@@ -18,9 +18,9 @@ See the 6 minute full video here: https://www.youtube.com/watch?v=pNWlzoTTb_A
 - Unsupervised Lane Marking Detection
 - PI Controller for Vehicle Speed Control
 
-Please see the paper here for the detailed explanation of each feature.
+Please see [the paper](https://goo.gl/1xiLWf) here for the detailed explanation of each feature.
 
-[a link](https://goo.gl/1xiLWf)
+
 
 # Layer Activation (Attention) Map Visualization
 <H2>Unsupervised Road Segmentation</H2>
@@ -39,7 +39,7 @@ The green/blue regions show image pixels that the model pays relatively less att
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20lane%20marking%20detection.png)
 
 <H2>Information Bottleneck and Individual Neuron Activation Visualization </H2>
-The paper further describes how the fourth convolutional layer makes high-level decision based on the low-level features learned by the previous convolutional layers (Conv1, Conv2, Conv3 layers) and describes the interaction between Layer Activation (Attention) Map visualization and Individual Neuron Activation visualization. As well, the paper describes how the fifth convolutional layer makes high-level decisions by compressing the features as much as possible while achieving as high steering angle prediction accuracy as possible; and describes the potential interaction between Information Bottleneck and Layer Activation (Attention) Map visualization. See Section 3.5 of the paper for the detailed explanation.
+The paper further describes how the fourth convolutional layer makes high-level decision based on the low-level features learned by the previous convolutional layers (Conv1, Conv2, Conv3 layers) and describes the interaction between Layer Activation (Attention) Map visualization and Individual Neuron Activation visualization. As well, the paper describes how the fifth convolutional layer makes high-level decisions by compressing the features as much as possible while achieving as high steering angle prediction accuracy as possible; and describes the potential interaction between Information Bottleneck and Layer Activation (Attention) Map visualization. See Section 3.5 of [the paper](https://goo.gl/1xiLWf) for the detailed explanation.
 
 # Software Dependencies
 Make sure you have the right versions of the software installed: 
@@ -54,7 +54,7 @@ Make sure you have the right versions of the software installed:
 - keras 2.0.7
 
 # Simulation Data Generation
-Please see Section 3.1 of the paper for the detailed explanation of how to generate the simulation data for training/testing the model. Please send an email to paichul@cs.stanford.edu for the simulator binary.
+Please see Section 3.1 of [the paper](https://goo.gl/1xiLWf)for the detailed explanation of how to generate the simulation data for training/testing the model. Please send an email to paichul@cs.stanford.edu for the simulator binary.
 
 # Training and Testing Instructions
 - model.py: model training pipeline from data preprocessing, data augmentation, model specification to training optimization. The training process generates a model called "model.h5" that can be used by the simulator to run the vehicle autonomously.
@@ -78,7 +78,7 @@ To visualize different layer of the model, run:
 "python visualize.py [layer_name]"
 
 # Publication
-See the paper "Interpretable Behavioral Cloning in Simulation" for this open source project.
+See [the paper "Interpretable Behavioral Cloning in Simulation"](https://goo.gl/1xiLWf) for this open source project.
 
 # Simulation to Reality Transfer
 This open source project is a small component of the larger Simulation-To-Reality Transfer for Autonomous Driving/Robots framework. The rest of the framework will be open sourced soon. Potential future open source features include:
