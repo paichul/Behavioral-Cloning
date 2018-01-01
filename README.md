@@ -20,6 +20,8 @@ See the 6 minute full video here: https://www.youtube.com/watch?v=pNWlzoTTb_A
 
 Please see the paper here for the detailed explanation of each feature.
 
+[a link](https://goo.gl/1xiLWf)
+
 # Layer Activation (Attention) Map Visualization
 <H2>Unsupervised Road Segmentation</H2>
 According to the Activation (Attention) Map Visualization for the first Convolutional layer, we see that Convolutional Layer 1 (Conv1) has learned to perform Road Segmentation even without 
