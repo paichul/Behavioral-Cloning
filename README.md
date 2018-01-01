@@ -21,19 +21,23 @@ See the 6 minute full video here: https://www.youtube.com/watch?v=pNWlzoTTb_A
 Please see the paper here for the detailed explanation of each feature.
 
 # Intermediate Layer Activation (Attention) Map Visualization
-<H2>Unsupervised Road Segmentation</H2>: According to the Activation (Attention) Map Visualization for the first Convolutional layer, we see that Convolutional Layer 1 has learned to perform Road Segmentation even without 
+<H2>Unsupervised Road Segmentation</H2>
+According to the Activation (Attention) Map Visualization for the first Convolutional layer, we see that Convolutional Layer 1 has learned to perform Road Segmentation even without 
 any semantic scene segmentation label information, but only the steering angle control supervision.
 The green region shows image pixels the model pays relatively less attention to for the steering angle prediction and the red region (the road) shows the image pixels that the model pays substantially more attention to for the steering angle prediction.
 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20road%20segmentation.png)
 
-Unsupervised Lane Marking Detection: According to the Attention Map Visualization, we see that 
-Convolutional Layer 2 and Convoluational Layer 3 have learned to perform Lane Marking Detection even without 
+<H2>Unsupervised Lane Marking Detection<H2>
+According to the Activation (Attention) Map Visualization for the second and third Convolutional layers, we see that 
+Convolutional Layers 2 and 3 have learned to perform Lane Marking Detection even without 
 any lane marking label information, but only the steering angle control supervision.
-The green/blue regions show less relevant image pixels (the model pays less positive attention) for the steering angle prediction and the red region (the lane marking) shows the more relevant image pixels that the model pays (more positive) attention to for the steering angle prediction.
+The green/blue regions show image pixels that the model pays relatively less attention to for the steering angle prediction and the red region (the lane marking) shows the image pixels that the model pays substantially more attention to for the steering angle prediction.
 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20lane%20marking%20detection.png)
 
+<H2>Information Bottleneck and Individual Neuron Activation Visualization </H2>
+The paper further describes how the fourth convolutional layer makes high-level decision based on the low-level features learned by the previous convolutional layers and described the interaction between Layer Activation (Attention) Map visualization and Individual Neuron Activation visualization. As well, the paper describes how the fifth layer might make high-level decision by compressing the features as much as possible while achieving high steering angle prediction accuracy; and describes the interaction between Information Bottleneck and Layer Activation (Attention) Map visualization. See the Section 3.5 of the paper for the detailed explanation.
 
 # Software Dependencies
 Make sure you have the right versions of the software installed: 
