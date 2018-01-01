@@ -11,20 +11,19 @@ See the 6 minute full video here: https://www.youtube.com/watch?v=pNWlzoTTb_A
 
 # Features
 - End-to-End Convolutional Neural Network for Vehicle Steering Angle Control
-- Residual Connection
+- Shortcut Connection
 - Batch Normalization
-- Intermediate Layer Attention Map Visualization
+- Intermediate Layer Activation (Attention) Map Visualization
 - Unsupervised Road Segmentation
 - Unsupervised Lane Marking Detection
 - PI Controller for Vehicle Speed Control
 
 Please see the paper here for the detailed explanation of each feature.
 
-# Intermediate Layer Attention Map Visualization
-Unsupervised Road Segmentation: According to the Attention Map Visualization, we see that 
-Convolutional Layer 1 has learned to perform Road Segmentation even without 
+# Intermediate Layer Activation (Attention) Map Visualization
+<H2>Unsupervised Road Segmentation</H2>: According to the Activation (Attention) Map Visualization for the first Convolutional layer, we see that Convolutional Layer 1 has learned to perform Road Segmentation even without 
 any semantic scene segmentation label information, but only the steering angle control supervision.
-The green region shows irrelevant image pixels (the model pays negative attention) for the steering angle prediction and the red region (the road) shows the relevant image pixels that the model pays (positive) attention to for the steering angle prediction.
+The green region shows image pixels the model pays relatively less attention to for the steering angle prediction and the red region (the road) shows the image pixels that the model pays substantially more attention to for the steering angle prediction.
 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20road%20segmentation.png)
 
