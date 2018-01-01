@@ -54,7 +54,7 @@ Make sure you have the right versions of the software installed:
 - keras 2.0.7
 
 # Simulation Data Generation
-Please see Section 3.1 of [the paper](https://goo.gl/1xiLWf)for the detailed explanation of how to generate the simulation data for training/testing the model. Please send an email to paichul@cs.stanford.edu for the simulator binary.
+Please see Section 3.1 of [the paper](https://goo.gl/1xiLWf) for the detailed explanation of how to generate the simulation data for training/testing the model. Please send an email to paichul@cs.stanford.edu for the simulator binary.
 
 # Training and Testing Instructions
 - model.py: model training pipeline from data preprocessing, data augmentation, model specification to training optimization. The training process generates a model called "model.h5" that can be used by the simulator to run the vehicle autonomously.
@@ -65,7 +65,6 @@ Please see Section 3.1 of [the paper](https://goo.gl/1xiLWf)for the detailed exp
 To train the model, run:
 
 "python model.py"
-
 
 To run the trained model, type:
 
@@ -78,7 +77,7 @@ To visualize different layer of the model, run:
 "python visualize.py [layer_name]"
 
 # Publication
-See [the paper "Interpretable Behavioral Cloning in Simulation"](https://goo.gl/1xiLWf) for this open source project.
+See the paper ["Interpretable Behavioral Cloning in Simulation"](https://goo.gl/1xiLWf) for this open source project.
 
 # Simulation to Reality Transfer
 This open source project is a small component of the larger Simulation-To-Reality Transfer for Autonomous Driving/Robots framework. The rest of the framework will be open sourced soon. Potential future open source features include:
