@@ -37,7 +37,7 @@ The green/blue regions show image pixels that the model pays relatively less att
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/unsupervised%20lane%20marking%20detection.png)
 
 <H2>Information Bottleneck and Individual Neuron Activation Visualization </H2>
-The paper further describes how the fourth convolutional layer makes high-level decision based on the low-level features learned by the previous convolutional layers and described the interaction between Layer Activation (Attention) Map visualization and Individual Neuron Activation visualization. As well, the paper describes how the fifth layer might make high-level decision by compressing the features as much as possible while achieving high steering angle prediction accuracy; and describes the interaction between Information Bottleneck and Layer Activation (Attention) Map visualization. See the Section 3.5 of the paper for the detailed explanation.
+The paper further describes how the fourth convolutional layer makes high-level decision based on the low-level features learned by the previous convolutional layers and described the interaction between Layer Activation (Attention) Map visualization and Individual Neuron Activation visualization. As well, the paper describes how the fifth convolutional layer might make high-level decisions by compressing the features as much as possible while achieving high steering angle prediction accuracy; and describes the interaction between Information Bottleneck and Layer Activation (Attention) Map visualization. See Section 3.5 of the paper for the detailed explanation.
 
 # Software Dependencies
 Make sure you have the right versions of the software installed: 
@@ -52,13 +52,12 @@ Make sure you have the right versions of the software installed:
 - keras 2.0.7
 
 # Simulation Data Generation
-Please see the paper here for the detailed explanation of the simulation data generation procedure.
-Please send an email to paichul@cs.stanford.edu for the simulator binary.
+Please see Section 3.1 of the paper for the detailed explanation of how to generate the simulation data for training/testing the model. Please send an email to paichul@cs.stanford.edu for the simulator binary.
 
 # Training and Testing Instructions
-- model.py: model training pipeline from data preprocessing, data augmentation, model specification to optimization. The training outputs a model called "model.h5" that can be used by the simulator to run the vehicle autonomously.
-- drive.py: model testing pipeline including a PI Controller to generate the speed command and it lods the model.h5 to generate the steering angle prediction. It also sends the speed and steering angle command to the simulator to maneuver the vehicle autonomously in the simulator.
-- visualize.py: visualization pipeline for interpretability.
+- model.py: model training pipeline from data preprocessing, data augmentation, model specification to training optimization. The training process generates a model called "model.h5" that can be used by the simulator to run the vehicle autonomously.
+- drive.py: model testing pipeline including a PI Controller to generate the speed command and it loads the model "model.h5" to generate the steering angle prediction. It also sends the speed and steering angle commands to the simulator to maneuver the vehicle autonomously in the simulator.
+- visualize.py: visualization pipeline using Layer Activation (Attention) Map Visualization for model interpretability.
 - tools.py: data preprocessing utility tools
 
 To train the model, run:
@@ -77,10 +76,10 @@ To visualize different layer of the model, run:
 "python visualize.py [layer_name]"
 
 # Publication
-Please see the paper "Interpretable Behavioral Cloning in Simulation" for this open source project.
+See the paper "Interpretable Behavioral Cloning in Simulation" for this open source project.
 
 # Simulation to Reality Transfer
-This project is a small component of the larger Simulation-To-Reality Transfer for Autonomous Driving/Robots framework. The rest of the framework will be open sourced soon. Potential features include:
+This open source project is a small component of the larger Simulation-To-Reality Transfer for Autonomous Driving/Robots framework. The rest of the framework will be open sourced soon. Potential future open source features include:
 - Generative Models (such as Adverserial Generative Networks)
 - Domain Adoptation
 - Transfer Learning
