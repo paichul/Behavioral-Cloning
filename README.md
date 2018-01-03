@@ -51,7 +51,7 @@ The image below shows how the fourth convolutional layer (Conv4) pays attention 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/high-level%20decision%20making.png)
 
 <H2> Gradient Ascent Based Neuron Activation Visualization (under Investigation) </H2>
-We can learn an input image that maximally activates a certain neuron in the neural network model using Gradient Ascent Based Activation approach as summarized in https://distill.pub/2017/feature-visualization/. The interaction between layer activation map visualization (collective multi-neuron interactions) and gradient ascent based neuron activation visualization is unde.
+We can learn an input image that maximally activates a certain neuron in the neural network model using Gradient Ascent Based Activation approach as summarized in https://distill.pub/2017/feature-visualization/. The interaction between layer activation map visualization (collective multi-neuron interactions) and gradient ascent based neuron activation visualization is currently work in progress.
 
 # Software Dependencies
 Make sure you have the right versions of the software installed: 
