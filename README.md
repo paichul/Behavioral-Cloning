@@ -66,7 +66,7 @@ Make sure you have the right versions of the software installed:
 - keras 2.0.7
 
 # Simulation Data Generation
-Please see Section 3.1 of [the paper](https://goo.gl/1xiLWf) for the detailed explanation of how to generate the simulation data for training/testing the model. Please send an email to paichul@cs.stanford.edu for the simulator binary.
+Please see Section 3.1 of [the paper](https://goo.gl/KTzoLT) for the detailed explanation of how to generate the simulation data for training/testing the model. Please send an email to paichul@cs.stanford.edu for the simulator binary.
 
 # Training and Testing Instructions
 - model.py: model training pipeline from data preprocessing, data augmentation, model specification to training optimization. The training process generates a model called "model.h5" that can be used by the simulator to run the vehicle autonomously.
