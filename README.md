@@ -48,7 +48,7 @@ Batch Normalization is added right after the first convolutional layer (Conv1) a
 <H2> Conv4 Visualization for High-Level Decision Making</H2>
 The image below shows how the fourth convolutional layer (Conv5) pays attention ahead and the lane marking (red regions) in terms of the abstract representation learned by the lower convolutional layers for steering the vehicle straight ahead. 
 
-![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/conv5%20decision%20making.png)
+![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/high-level%20decision%20making.png)
 
 <H2> Gradient Ascent Based Neuron Activation Visualization (under Investigation) </H2>
 We can learn an input image that maximally activates a certain neuron in the neural network model using Gradient Ascent Based Activation approach as summarized in https://distill.pub/2017/feature-visualization/. The interaction between layer activation map visualization (collective multi-neuron interactions) and gradient ascent based neuron activation visualization is unde.
