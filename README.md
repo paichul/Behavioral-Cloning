@@ -48,6 +48,8 @@ Batch Normalization is added right after the first convolutional layer (Conv1) a
 <H2> Conv5 Visualization & Information Bottleneck (under Investigation) </H2>
 The image below shows it pays attention ahead (dark red region) for steering the vehicle straight ahead. One interesting observation is that the image is mostly red but one can still spot the darker red region to find the model’s attention focus. The activation (attention) map visualization is mostly red-ish possibly because at the highest-level, convolutional layer Conv5 tries to compress away as much irrelevant information as possible to make sure the high-level features are highly relevant to the steering angle prediction. This compression phenomenon has also been observed in related Information Bottleneck research work by S. Keerthi: "On The Information Bottleneck" in ICLR, 2018. However, the interaction between the activation map layer visualization and Information Bottleneck (compression and accuracy tradeoff) is still under active investigation.
 
+![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/conv5%20decision%20making.png)
+
 <H2> Gradient Ascent Based Neuron Activation Visualization (under Investigation)</H2>
 We can learn an input image that maximally activates a certain neuron in the neural network model using Gradient Ascent Based Activation approach as summarized in https://distill.pub/2017/feature-visualization/. The interaction between layer activation map visualization (collective multi-neuron interactions) and gradient ascent based neuron activation visualization is under active investigation.
 
