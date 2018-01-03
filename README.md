@@ -22,7 +22,7 @@ Please see [the paper](https://goo.gl/1xiLWf) here for the detailed explanation 
 
 
 # Layer Activation (Attention) Map Visualization
-Activation Map allows people to visualize how the different neural network layer pays attention to different parts of the image with respect to a discrete class label. This thus allows us to reason about inference attribution.
+Activation Map allows people to visualize how the different neural network layer pays attention to different parts of the image with respect to a discrete class label. This thus allows us to reason about inference attribution. The Activation Map Visualization approach in this research work allows us to see how a neural network performs holistic scene understanding.
 
 <H2>Unsupervised Road Segmentation</H2>
 According to the Activation (Attention) Map Visualization for the first Convolutional layer, we see that Convolutional Layer 1 (Conv1) has learned to perform Road Segmentation even without 
@@ -48,8 +48,8 @@ Batch Normalization is added right after the first convolutional layer (Conv1) a
 <H2> Conv5 Visualization and Information Bottleneck (under Investigation) </H2>
 The image below shows it pays attention ahead (dark red region) for steering the vehicle straight ahead. One interesting observation is that the image is mostly red but one can still spot the darker red region to find the model’s attention focus. The activation (attention) map visualization is mostly red-ish possibly because at the highest-level, convolutional layer Conv5 tries to compress away as much irrelevant information as possible to make sure the high-level features are highly relevant to the steering angle prediction. This compression phenomenon has also been observed in related Information Bottleneck research work by S. Keerthi: "On The Information Bottleneck" in ICLR, 2018. However, the interaction between the activation map layer visualization and Information Bottleneck (compression and accuracy tradeoff) is still under active investigation.
 
-<H2> Gradient Ascent Based Neuron Visualization (under Investigation)</H2>
-
+<H2> Gradient Ascent Based Neuron Activation Visualization (under Investigation)</H2>
+We can learn an input image that maximally activates a certain neuron in the neural network model using Gradient Ascent Based Activation approach as summarized in https://distill.pub/2017/feature-visualization/. The interaction between layer activation map visualization (collective multi-neuron interactions) and gradient ascent based neuron activation visualization is under active investigation.
 
 # Software Dependencies
 Make sure you have the right versions of the software installed: 
@@ -99,4 +99,19 @@ This open source project is a small component of the larger Simulation-To-Realit
 - Adverserial Example
 
 # References
-
+- Volodymyr Mnih, "Playing Atari with Deep Reinforcement Learning," 2013.
+- P. Lin, "Behavioral Cloning for Autonomous Driving in Simulation," https://youtu.be/pNWlzoTTb_A.
+- Ian J. Goodfellow, "Generative Adversarial Networks," in NIPS, 2014.
+- Bolei Zhou, "Learning Deep Features for Discriminative Localization," in CVPR, 2016.
+- Ramprasaath R. Selvaraju, "Grad-CAM: Visual Explanations from Deep Networks via Gradient-based Localization," in ICCV, 2017.
+- Jost Tobias
+- Springenberg, "Striving for Simplicity: The All Convolutional Net," in ICLR, 2015.
+- Anh Nguyen, "Multifaceted Feature Visualization: Uncovering the Different Types of Features Learned By Each Neuron in Deep Neural Networks," in ICML, 2016.
+- N. T. Ravid Schwartz-Ziv, "Opening the black box of Deep Neural Networks," in ICRI-CI, 2017.
+- J. B. Diederik P. Kingma, "Adam: A Method for Stochastic Optimization," in ICRL, 2015.
+- S. Keerthi, "On The Information Bottleneck,"inICLR,2018.
+- D. A. Pomerleau, "ALVINN, an autonomous land vehicle in a neural network.," Technical report, Carnegie Mellon University, 1989.
+- Mariusz Bojarski, "End to End Learning for Self-Driving Cars," in CVPR, 2016.
+- Jun-Yan Zhu, "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial"
+- T. B. J. K. Ming-Yu Liu, "Unsupervised Image-to-ImageTranslationNetworks,"in NIPS, 2017.
+- Konstantinos Bousmalis, "Using Simulation and Domain Adaptation to Improve Efficiency of Deep Robotic Grasping," in CVPR, 2017.
