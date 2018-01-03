@@ -46,7 +46,7 @@ Adding shortcut connection from Conv5 to concatenate with the Dense4 improves th
 Batch Normalization is added right after the first convolutional layer (Conv1) and the second convolutional layer (Conv2) and before their activation functions. Adding Batch Normalization at lower convolutional layers allows the model to be less sensitive to lower-level image features/input distribution and thus can generalize better.
 
 <H2> Conv4 Visualization for High-Level Decision Making</H2>
-The image below shows how the fourth convolutional layer (Conv5) pays attention ahead and the lane marking (red regions) in terms of the abstract representation learned by the lower convolutional layers for steering the vehicle straight ahead. 
+The image below shows how the fourth convolutional layer (Conv4) pays attention ahead and the lane marking (red regions) in terms of the abstract representation learned by the lower convolutional layers for steering the vehicle straight ahead. 
 
 ![](https://github.com/paichul/Behavioral-Cloning/blob/master/images/high-level%20decision%20making.png)
 
