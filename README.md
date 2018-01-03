@@ -22,7 +22,7 @@ Please see [the paper](https://goo.gl/KTzoLT) here for the detailed explanation 
 
 
 # Layer Activation (Attention) Map Visualization
-Activation Map allows people to visualize how the different neural network layer pays attention to different parts of the image with respect to a discrete class label. This thus allows us to reason about inference attribution. The Activation Map Visualization approach in this research work allows us to see how a neural network performs holistic scene understanding.
+Activation Map allows people to visualize how the different neural network layer pays attention to different parts of the image with respect to the control output (steering angle). The Activation Map Visualization approach in this research work allows us to see how a neural network performs holistic scene understanding for the steering angle control prediction.
 
 <H2>Unsupervised Road Segmentation</H2>
 According to the Activation (Attention) Map Visualization for the first Convolutional layer, we see that Convolutional Layer 1 (Conv1) has learned to perform Road Segmentation even without 
