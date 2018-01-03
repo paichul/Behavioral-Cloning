@@ -94,7 +94,7 @@ See the paper ["Interpretable Behavioral Cloning in Simulation"](https://goo.gl/
 # Simulation to Reality Transfer
 This open source project is a small component of the larger Simulation-To-Reality Transfer for Autonomous Driving/Robots framework. The rest of the framework will be open sourced soon. Potential future open source features include:
 - Generative Models (such as Adverserial Generative Networks)
-- Domain Adoptation
+- Domain Adaptation
 - Transfer Learning
 - Multi-Task Learning
 - Meta Learning
