@@ -45,7 +45,7 @@ Adding shortcut connection from Conv5 to concatenate with the Dense4 improves th
 <H2>Low-level Convolutional Layer Batch Normalization</H2>
 Batch Normalization is added right after the first convolutional layer (Conv1) and the second convolutional layer (Conv2) and before their activation functions. Adding Batch Normalization at lower convolutional layers allows the model to be less sensitive to lower-level image features/input distribution and thus can generalize better.
 
-<H2> Conv5 Visualization and Information Bottleneck (under Investigation) </H2>
+<H2> Conv5 Visualization & Information Bottleneck (under Investigation) </H2>
 The image below shows it pays attention ahead (dark red region) for steering the vehicle straight ahead. One interesting observation is that the image is mostly red but one can still spot the darker red region to find the model’s attention focus. The activation (attention) map visualization is mostly red-ish possibly because at the highest-level, convolutional layer Conv5 tries to compress away as much irrelevant information as possible to make sure the high-level features are highly relevant to the steering angle prediction. This compression phenomenon has also been observed in related Information Bottleneck research work by S. Keerthi: "On The Information Bottleneck" in ICLR, 2018. However, the interaction between the activation map layer visualization and Information Bottleneck (compression and accuracy tradeoff) is still under active investigation.
 
 <H2> Gradient Ascent Based Neuron Activation Visualization (under Investigation)</H2>
