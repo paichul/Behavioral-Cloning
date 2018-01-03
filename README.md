@@ -18,7 +18,7 @@ See the 6 minute full video here: https://www.youtube.com/watch?v=pNWlzoTTb_A
 - Unsupervised Lane Marking Detection
 - PI Controller for Vehicle Speed Control
 
-Please see [the paper](https://goo.gl/1xiLWf) here for the detailed explanation of each feature.
+Please see [the paper](https://goo.gl/KTzoLT) here for the detailed explanation of each feature.
 
 
 # Layer Activation (Attention) Map Visualization
@@ -89,7 +89,7 @@ To visualize different layer of the model, run:
 "python visualize.py [layer_name]"
 
 # Publication
-See the paper ["Interpretable Behavioral Cloning in Simulation"](https://goo.gl/1xiLWf) for this open source project.
+See the paper ["Interpretable Behavioral Cloning in Simulation"](https://goo.gl/KTzoLT) for this open source project.
 
 # Simulation to Reality Transfer
 This open source project is a small component of the larger Simulation-To-Reality Transfer for Autonomous Driving/Robots framework. The rest of the framework will be open sourced soon. Potential future open source features include:
